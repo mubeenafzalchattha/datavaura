@@ -3,8 +3,8 @@ export const company = {
   legal: "Datavaura Technologies FZ-LLC",
   tagline: "Enterprise systems. Digital compliance. One operating layer.",
   email: "info@datavaura.com",
-  whatsapp: "https://wa.me/12269195721",
-  whatsappDisplay: "+1 226 919 5721",
+  whatsapp: "https://wa.me/971558932044",
+  whatsappDisplay: "+971 55 893 2044",
   linkedin: "https://linkedin.com/company/datavaura",
   twitter: "https://x.com/datavaura",
   facebook: "https://facebook.com/datavaura",
@@ -733,7 +733,7 @@ export const pdfBrochure = {
     clarification:
       "Datavaura does not represent itself as an independently accredited UAE e-invoicing Service Provider. The client has one Datavaura contact; regulated platform services sit with the accredited provider.",
     openPeppol:
-      "Datavaura Technologies FZ-LLC is an OpenPeppol member. That membership supports structured electronic-document exchange more broadly. It is distinct from UAE Service Provider accreditation. UAE e-invoicing in this brochure is delivered through the accredited platform-partner model.",
+      "Datavaura Technologies FZ-LLC is an OpenPeppol member. That membership supports structured electronic-document exchange more broadly. It is distinct from UAE Service Provider accreditation. UAE e-invoicing on this website is delivered through the accredited platform-partner model.",
   },
   ledgerHolders: {
     line: "LINE · LEDGER HOLDERS 07 / 08",

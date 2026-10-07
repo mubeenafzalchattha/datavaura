@@ -69,12 +69,12 @@ export default function ContactPage() {
               <div className="flex items-center justify-between">
                 <span className="text-white/50">WhatsApp Direct</span>
                 <a
-                  href="https://wa.me/12269195721"
+                  href="https://wa.me/971558932044"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#35bfcd] hover:underline"
                 >
-                  +1 226 919 5721
+                  +971 55 893 2044
                 </a>
               </div>
               <div className="flex items-center justify-between">

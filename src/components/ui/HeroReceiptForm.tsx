@@ -87,42 +87,33 @@ export function HeroReceiptForm() {
             built around your ERP, data, compliance and future business needs.
           </p>
 
-          {/* Trust logos */}
-          <div className="mt-8 flex flex-wrap items-center gap-6">
-            {/* Fully Accredited */}
-            <div className="flex items-center gap-3">
-              <Image
-                src="/Fully-Accredited-E-Invoice-Service-Provider-by-the-Ministry-of-Finance-UAE-blue@10x-8-1.png"
-                alt="Fully Accredited E-Invoice Service Provider by the Ministry of Finance UAE"
-                width={56}
-                height={56}
-                className="h-12 w-12 object-contain"
-              />
-              <span
-                className="text-[11px] font-semibold leading-snug"
-                style={{ color: "#021547", maxWidth: 175 }}
-              >
-                Fully Accredited E-Invoice<br />Service Provider by the<br />Ministry of Finance, UAE
+          {/* Trust badges */}
+          <div className="mt-8 flex flex-wrap items-start gap-5">
+            {/* E-invoicing platform badge */}
+            <div className="flex items-start gap-2">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style={{ marginTop: 2, flexShrink: 0 }}>
+                <circle cx="10" cy="10" r="10" fill="#2198a4" />
+                <path d="M6 10.5l3 3 5-6" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="text-[11px] font-semibold leading-snug" style={{ color: "#021547", maxWidth: 210 }}>
+                E-invoicing delivered through a Ministry of Finance-accredited platform partner
               </span>
             </div>
 
-            {/* Divider */}
-            <div style={{ width: 1, height: 48, background: "rgba(2,21,71,0.15)" }} />
-
-            {/* Peppol */}
+            {/* Peppol member badge */}
             <div className="flex items-center gap-2">
               <Image
                 src="/peppol@10x.webp"
-                alt="Certified Peppol Access Point Provider"
+                alt="OpenPeppol member"
                 width={120}
                 height={48}
-                style={{ width: "auto", height: 40 }}
+                style={{ width: "auto", height: 36 }}
               />
               <span
                 className="text-[10px] font-semibold uppercase leading-tight tracking-wider"
                 style={{ color: "#021547", maxWidth: 80 }}
               >
-                CERTIFIED<br />ACCESS POINT<br />PROVIDER
+                {/* OPENPEPPOL<br />MEMBER */}
               </span>
             </div>
           </div>
@@ -169,9 +160,7 @@ export function HeroReceiptForm() {
                 >
                   Speak with a Compliance Expert
                 </h2>
-                <p className="mt-1 text-[11px]" style={{ color: "#4e6370" }}>
-                  Trusted by 10,000+ enterprises worldwide
-                </p>
+
 
                 {/* Receipt meta row */}
                 <div className="mt-3 flex justify-between text-[9px] font-mono" style={{ color: "#2198a4" }}>

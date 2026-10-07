@@ -170,7 +170,7 @@ export function Footer() {
               <a href="mailto:info@datavaura.com">info@datavaura.com</a>
             </li>
             <li>
-              <a href="https://wa.me/12269195721">WhatsApp +1 226 919 5721</a>
+              <a href="https://wa.me/971558932044">WhatsApp +971 55 893 2044</a>
             </li>
             <li>
               <a href="https://linkedin.com/company/datavaura">LinkedIn</a>

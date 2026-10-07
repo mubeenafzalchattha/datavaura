@@ -134,7 +134,7 @@ export function ContactForm() {
               We have the brief.
             </p>
             <p className="mt-2 text-sm text-[#4e6370]">
-              A founder will reply within one business day. If urgent, WhatsApp +1 226 919 5721.
+              A founder will reply within one business day. If urgent, WhatsApp +971 55 893 2044.
             </p>
           </div>
         ) : (

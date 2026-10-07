@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  /* ── Logo brand colours ───────────────────────────── */
+  --brand-navy:   #021547;   /* deep navy — logo text & mark */
+  --brand-teal:   #2198a4;   /* teal/cyan — logo icon paths  */
+
+  /* ── Derived tones ────────────────────────────────── */
+  --brand-navy-light: #0a2670;   /* lighter navy for hovers     */
+  --brand-teal-light: #35bfcd;   /* lighter teal for highlights */
+  --brand-teal-dim:   #17707a;   /* muted teal for subtle UI    */
+
+  /* ── Neutrals (kept for content readability) ─────── */
+  --ink:    #021547;          /* body text = brand navy        */
+  --navy:   #021547;
+  --navy-2: #0a2670;
+  --paper:  #f5f8fa;          /* very light blue-white         */
+  --sand:   #e8f0f2;
+  --mist:   #d0e2e6;
+  --slate:  #4e6370;
+  --line:   rgba(33, 152, 164, 0.22);
+
+  /* ── Accent aliases (mapped to teal) ─────────────── */
+  --gold:    var(--brand-teal);
+  --gold-2:  var(--brand-teal-light);
+  --aurora:  var(--brand-teal-light);
+  --aurora-2: var(--brand-teal-dim);
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-navy: var(--navy);
+  --color-navy-2: var(--navy-2);
+  --color-gold: var(--gold);
+  --color-gold-2: var(--gold-2);
+  --color-aurora: var(--aurora);
+  --color-aurora-2: var(--aurora-2);
+  --color-sand: var(--sand);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-slate: var(--slate);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-teal-light: var(--brand-teal-light);
+  --font-sans: var(--font-montserrat);
+  --font-serif: var(--font-instrument);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-montserrat), Montserrat, system-ui, sans-serif;
+  font-weight: 400;
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.font-serif {
+  font-family: var(--font-instrument), Georgia, serif;
+}
+
+.grain {
+  position: relative;
+}
+
+.grain::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+.aurora {
+  background:
+    radial-gradient(900px 480px at 80% -10%, rgba(33, 152, 164, 0.22), transparent 55%),
+    radial-gradient(700px 420px at 10% 10%, rgba(53, 191, 205, 0.14), transparent 50%),
+    radial-gradient(1200px 600px at 50% 120%, rgba(2, 21, 71, 0.18), transparent 55%),
+    linear-gradient(180deg, #021547 0%, #0a2670 58%, #021547 100%);
+}
+
+.gold-line {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  height: 1px;
+}
+
+.mesh-grid {
+  background-image:
+    linear-gradient(rgba(33, 152, 164, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 152, 164, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+.flow-line {
+  stroke-dasharray: 6 8;
+  animation: flow 18s linear infinite;
+}
+
+@keyframes flow {
+  to {
+    stroke-dashoffset: -280;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.8s ease both;
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.pulse-dot {
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .flow-line,
+  .marquee-track,
+  .pulse-dot,
+  .rise {
+    animation: none;
+  }
+}

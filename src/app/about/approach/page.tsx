@@ -17,7 +17,7 @@ export default function ApproachPage() {
     <>
       <PageHero
         eyebrow="Controlled Delivery"
-        title="Precise scope. Practical outcomes. Founders on the work."
+        title="Precise scope. Practical outcomes. Founder-led involvement."
         copy="Every engagement is led by the people who design the architecture. Every deliverable is scoped in writing before technical work begins."
       />
 

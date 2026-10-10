@@ -3,6 +3,7 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { PageHero } from "@/components/ui/PageHero";
 import { ReceiptLedgerStrip } from "@/components/ui/ReceiptLedgerStrip";
 import { Container, Section } from "@/components/ui/Section";
+import { company } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Book a Consultation | Datavaura",
@@ -51,7 +52,7 @@ export default function ContactPage() {
                 Speak to the leadership.
               </h3>
               <p className="mt-3 text-sm text-[#e8f0f2]/75 leading-relaxed">
-                Direct engagement with Younes Abu Ghalyoun MBA (UAE FTA Registered Tax Agent, 33+ years advisory) and engineering leadership. You deal with the people who do the work.
+                Direct engagement with Younes Abu Ghalyoun MBA (UAE FTA Registered Tax Agent, 30+ years advisory) and engineering leadership. You deal with the people who do the work.
               </p>
             </div>
 
@@ -69,7 +70,7 @@ export default function ContactPage() {
               <div className="flex items-center justify-between">
                 <span className="text-white/50">WhatsApp Direct</span>
                 <a
-                  href="https://wa.me/971558932044"
+                  href={company.whatsappInquiry}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#35bfcd] hover:underline"

@@ -82,7 +82,7 @@ export function LedgerHoldersAndSignatory() {
 
             <div className="mt-6 flex items-center justify-between border-t border-dashed border-slate-200 pt-4 text-xs font-mono text-slate-400">
               <span>UAE FTA Credentials</span>
-              <span className="text-[#021547] font-semibold">33+ Years Advisory</span>
+              <span className="text-[#021547] font-semibold">30+ Years Advisory</span>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ export function LedgerHoldersAndSignatory() {
               </p>
             </div>
             <div className="mt-6 border-t border-white/10 pt-4 font-mono text-xs text-[#2198a4]">
-              ● ZERO DISRUPTION CUTOVER
+              ● CONTROLLED CUTOVER – MINIMISE BUSINESS DISRUPTION
             </div>
           </div>
         </div>

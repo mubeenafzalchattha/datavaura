@@ -143,7 +143,7 @@ export default function AboutPage() {
             </span>
           </div>
 
-          <div className="mt-8 grid gap-8 md:grid-cols-2">
+          <div className="mt-8 grid gap-8 md:grid-cols-1 max-w-xl">
             {leaders.map((p) => (
               <article
                 key={p.name}
@@ -157,7 +157,7 @@ export default function AboutPage() {
                     {p.name}
                   </h3>
                   <span className="rounded bg-[#2198a4]/20 px-2.5 py-1 font-mono text-[10px] text-[#35bfcd] border border-[#2198a4]/40">
-                    PARTNER
+                    FOUNDER & MD
                   </span>
                 </div>
                 <p className="mt-2 font-mono text-xs font-semibold uppercase tracking-wider text-[#2198a4]">

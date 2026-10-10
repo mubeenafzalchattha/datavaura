@@ -8,7 +8,7 @@ import { leaders } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Leadership | Datavaura",
   description:
-    "Younes Abu Ghalyoun MBA, President & UAE FTA Registered Tax Agent. Hamdan, CTO. You speak directly with both founders.",
+    "Younes Abu Ghalyoun MBA, Founder & Managing Director and UAE FTA Registered Tax Agent. You speak directly with the founder.",
 };
 
 export default function LeadershipPage() {
@@ -17,7 +17,7 @@ export default function LeadershipPage() {
       <PageHero
         eyebrow="Leadership & Signatories"
         title="You deal with the people who do the work."
-        copy="No junior account managers. Strategy, compliance alignment, and technical architecture are delivered directly by the founders."
+        copy="No junior account managers. Strategy, compliance alignment, and technical architecture are delivered directly by the founder."
       />
 
       <ReceiptLedgerStrip />
@@ -39,7 +39,7 @@ export default function LeadershipPage() {
             </span>
           </div>
 
-          <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div className="mt-10 grid gap-8 md:grid-cols-1 max-w-xl">
             {leaders.map((p, idx) => (
               <article
                 key={p.name}
@@ -49,10 +49,10 @@ export default function LeadershipPage() {
                   {/* Top Credentials Ribbon */}
                   <div className="flex items-center justify-between border-b border-dashed border-[#2198a4]/25 pb-4">
                     <span className="font-mono text-xs font-bold text-[#2198a4]">
-                      FOUNDER 0{idx + 1}
+                      FOUNDER
                     </span>
                     <span className="rounded bg-[#2198a4]/10 px-2.5 py-1 font-mono text-[10px] font-semibold text-[#021547]">
-                      {idx === 0 ? "FTA REGISTERED TAX AGENT" : "TECHNOLOGY LEADERSHIP"}
+                      FTA REGISTERED TAX AGENT
                     </span>
                   </div>
 

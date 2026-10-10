@@ -23,7 +23,7 @@ export default function TermsPage() {
               Content on this website, including technical commentary on UAE e-invoicing, is provided for general informational purposes and operational guidance. Confirm specific statutory deadlines and rules on the official UAE Ministry of Finance portal (<a href="https://mof.gov.ae" target="_blank" rel="noopener noreferrer" className="text-[#2198a4] underline">mof.gov.ae</a>).
             </p>
             <p>
-              Datavaura Technologies FZ-LLC is an OpenPeppol member and enterprise systems integrator. Regulated platform services are delivered through an accredited UAE platform partner. Datavaura is not an independently accredited Service Provider.
+              Datavaura Technologies FZ-LLC – OpenPeppol Member. OpenPeppol membership is separate from UAE Service Provider accreditation. UAE e-invoicing services are delivered through an MoF-accredited platform partner.
             </p>
           </div>
         </Container>

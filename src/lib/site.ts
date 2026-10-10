@@ -4,6 +4,11 @@ export const company = {
   tagline: "Enterprise systems. Digital compliance. One operating layer.",
   email: "info@datavaura.com",
   whatsapp: "https://wa.me/971558932044",
+  whatsappInquiry:
+    "https://wa.me/971558932044?text=" +
+    encodeURIComponent(
+      "Hi, I saw your website and need help with UAE e-invoicing."
+    ),
   whatsappDisplay: "+971 55 893 2044",
   linkedin: "https://linkedin.com/company/datavaura",
   twitter: "https://x.com/datavaura",
@@ -22,7 +27,7 @@ export const trustSignals = [
 
 export const metrics = [
   { value: "30+", label: "Years of UAE business advisory" },
-  { value: "2", label: "Founders on every engagement" },
+  { value: "1", label: "Founder-led involvement on every engagement" },
   { value: "4", label: "Currencies migrated in a single cutover" },
   { value: "20 min", label: "Digital readiness call — no obligation" },
 ];
@@ -494,13 +499,8 @@ export const caseStudy = {
 export const leaders = [
   {
     name: "Younes Abu Ghalyoun",
-    role: "President & CEO",
+    role: "Founder & Managing Director",
     copy: "30+ years of UAE and international business advisory, financial management, and ERP oversight. UAE FTA Registered Tax Agent. Every compliance-aware design is reviewed against actual VAT and Corporate Tax obligations — not only the technical spec.",
-  },
-  {
-    name: "Hamdan",
-    role: "Chief Technology Officer",
-    copy: "Leads technical architecture, integration, and delivery with PhD-level expertise. You speak with the person who designs the system — not a layered account structure.",
   },
 ];
 
@@ -721,7 +721,7 @@ export const pdfBrochure = {
       ],
     },
     partner: {
-      label: "CLEARED THROUGH",
+      label: "DELIVERED THROUGH",
       name: "Accredited partner",
       items: [
         "Regulated platform, hosting and operations",
@@ -733,7 +733,7 @@ export const pdfBrochure = {
     clarification:
       "Datavaura does not represent itself as an independently accredited UAE e-invoicing Service Provider. The client has one Datavaura contact; regulated platform services sit with the accredited provider.",
     openPeppol:
-      "Datavaura Technologies FZ-LLC is an OpenPeppol member. That membership supports structured electronic-document exchange more broadly. It is distinct from UAE Service Provider accreditation. UAE e-invoicing on this website is delivered through the accredited platform-partner model.",
+      "Datavaura Technologies FZ-LLC – OpenPeppol Member. OpenPeppol membership is separate from UAE Service Provider accreditation. UAE e-invoicing services are delivered through an MoF-accredited platform partner.",
   },
   ledgerHolders: {
     line: "LINE · LEDGER HOLDERS 07 / 08",
@@ -747,8 +747,8 @@ export const pdfBrochure = {
     ],
     signatory: {
       name: "Younes Abu Ghalyoun MBA",
-      title: "Founder and Managing Director · UAE FTA Registered Tax Agent",
-      bio: "More than 33 years in accounting, finance and taxation. Work focused on financial reporting, tax compliance, operational control and regulatory change. Datavaura was established to put that finance and compliance view into e-invoicing readiness, implementation coordination and technology-enabled client service.",
+      title: "Founder & Managing Director · UAE FTA Registered Tax Agent",
+      bio: "More than 30+ years in accounting, finance and taxation. Work focused on financial reporting, tax compliance, operational control and regulatory change. Datavaura was established to put that finance and compliance view into e-invoicing readiness, implementation coordination and technology-enabled client service.",
     },
     startingPosition:
       "We begin with the business as it operates today — entities, invoices, credit notes, customer and supplier records, systems, data and owners. Then the gaps, the actions, and the work to move forward.",

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Logo } from "@/components/brand/Logo";
 import { Button } from "@/components/ui/Button";
-import { nav } from "@/lib/site";
+import { company, nav } from "@/lib/site";
 
 const menus = [
   { label: "Solutions", href: "/solutions", items: nav.solutions },
@@ -170,13 +170,19 @@ export function Footer() {
               <a href="mailto:info@datavaura.com">info@datavaura.com</a>
             </li>
             <li>
-              <a href="https://wa.me/971558932044">WhatsApp +971 55 893 2044</a>
+              <a
+                href={company.whatsappInquiry}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp +971 55 893 2044
+              </a>
             </li>
             <li>
               <a href="https://linkedin.com/company/datavaura">LinkedIn</a>
             </li>
             <li className="pt-3 text-xs text-white/50">
-              Datavaura Technologies FZ-LLC is an OpenPeppol member. Regulated platform services are delivered through an accredited UAE partner. Datavaura is not an independently accredited Service Provider. Verify mandates at mof.gov.ae.
+              Datavaura Technologies FZ-LLC – OpenPeppol Member. OpenPeppol membership is separate from UAE Service Provider accreditation. UAE e-invoicing services are delivered through an MoF-accredited platform partner.
             </li>
           </ul>
         </div>
